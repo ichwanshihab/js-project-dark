@@ -252,7 +252,73 @@ footer a {
     float: right;
 }
 
-.fa:hover {
+.fa-twitter:hover {
     color: gray;
     transition-duration: 0.3s;
+}
+
+.fa-facebook:hover {
+    color: gray;
+    transition-duration: 0.3s;
+}
+
+.fa-instagram:hover {
+    color: gray;
+    transition-duration: 0.3s;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.label {
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    margin-left: 680px;
+    padding: 5px;
+    height: 26px;
+    width: 50px;
+    border-radius: 50px;
+    display: flex;
+    background-color: black;
+}
+
+body {
+    background-color: white;
+    transition: background 0.3s linear;
+}
+
+body.dark {
+    background: black;
+}
+
+body.dark p {
+    color: brown;
+}
+
+.checkbox {
+    opacity: 0;
+}
+
+.ball {
+    background-color: white;
+    border-radius: 50px;
+    margin-left: -3px;
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon-o {
+    color: orange;
+}
+
+.fa-sun-o {
+    color: yellow;
 }
